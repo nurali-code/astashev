@@ -1,0 +1,97 @@
+@import 'normolize'
+@import 'elements'
+@import 'header'
+@import 'footer'
+@import 'modal'
+
+.main
+    min-height: 96vh
+    max-height: 1200px
+    position: relative
+    display: flex
+    flex-direction: column
+    overflow: hidden
+    color: #fff
+    &::before
+        content: ''
+        display: block
+        width: 100%
+        height: 100%
+        position: absolute
+        z-index: -1
+        background: linear-gradient(179.74deg, rgba(24, 24, 35, 0.46) 0.2%, rgba(24, 24, 35, 0) 10.56%), linear-gradient(90.21deg, rgba(0, 0, 0, 0.15) 0.17%, rgba(0, 0, 0, 0.15) 45.64%, rgba(0, 0, 0, 0) 60.4%)
+
+    &-content
+        padding-top: 20px
+        padding-bottom: 100px
+        margin: auto
+        position: static
+
+    &__img
+        position: absolute
+        top: 0
+        right: 0
+        height: 100%
+        width: 100%
+        object-fit: cover
+        z-index: -111
+        background-color: #eee
+
+    p
+        max-width: 49%
+        font-size: 32px
+        margin-bottom: 40px
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6)
+
+    h1
+        margin: 0 0 28px
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+
+@media screen and ( max-width: 1200px )
+    .main
+        text-align: center
+        height: unset
+        max-height: unset
+        &-content
+            padding-top: 40px
+            padding-bottom: 60px
+        h1
+            left: 0
+            margin: 0 0 30px
+            &::before
+                display: none
+
+        p
+            margin: 0 auto 40px
+            max-width: 100%
+            margin-bottom: 30px
+
+        &__img
+            position: relative
+            left: -16px
+            width: 100vw
+            max-width: unset
+            height: 300px
+            margin: 0
+
+        .btn
+            display: none
+            &.mobile
+                display: inline-block
+                position: relative
+                top: -40px
+                margin: 0
+
+        .phone
+            border-top: 1px solid rgba(0, 0, 0, .1)
+            padding: 17px 0 0
+            width: 100%
+            max-width: 500px
+            margin: 0 auto
+            display: block
+            text-align: center
+
+@media screen and ( max-width: 700px )
+    .main
+        p
+            font-size: 12px

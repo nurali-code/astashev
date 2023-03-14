@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="d7decdc3f1939dc4" />
+    <title>Диоксид | Крупнейший производитель Углекислоты</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main" id="main">
+        <header>
+            <div class="container wrap">
+                <p class="logo">Асташев</p>
+                <nav class="nav wrap">
+                    <a href="#certificate" class="nav__link">Услуги</a>
+                    <a href="#product" class="nav__link">Отзывы</a>
+                    <a href="#footer" class="nav__link">Контакты</a>
+                </nav>
+                <a href="tel:89831859660" class="phone">
+                    <span>Телефон для справок:</span>
+                    <b>8(983)185-96-60</b>
+                </a>
+                <button data-modal="modal-form"  class="btn">зписатся</button>
+                <button data-modal="modal-menu" class="btn-menu"><span></span></button>
+            </div>
+        </header>
+
+        <div class="main-content container">
+            <h1>
+                <b>Юридические <br> улуги</b> в сфере <br>
+                недвижимости
+            </h1>
+            <p>
+                Запишитесь на бесплатный прием <br> к узкопрофильному юристу
+            </p>
+            <button data-modal="modal-form" class="btn">заказать</button>
+            
+        </div>
+
+        <img src="img/main.jpg" loading="lazy" class="main__img" alt="main">
+
+    </main>
+
+
+    <div class="modal" id="modal-menu">
+        <div class="modal-content">
+            <nav>
+                <a href="#certificate">сертификаты</a>
+                <a href="#why">почему мы?</a>
+                <a href="#product">Продукция</a>
+                <a href="#geography">География продаж </a>
+                <a href="#production">Производство</a>
+                <a href="#footer">контакты</a>
+            </nav>
+            <a href="tel:89132606136" class="phone">
+                <span>Телефон отдела продаж:</span>
+                <b>8(913)-260-61-36</b>
+            </a>
+            <a href="mailto:dioksid-barnaul@mail.ru" class="phone">
+                <span>Напишите нам:</span>
+                <b>dioksid-barnaul@mail.ru</b>
+            </a>
+            <button data-modal="modal-form" class="btn">сделать заказ</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-form">
+        <div class="modal-content">
+            <button class="modal-close">&#x2715</button>
+            <h3>Запись на прием</h3>
+            <form action="./smart.php" method="post" class="form">
+                <div class="inp-wrap">
+                    <label>Как вас зовут <i>*</i></label>
+                    <input type="text" id="name" name="name" required placeholder="Как вас зовут?">
+                </div>
+                <div class="inp-wrap">
+                    <label>Номер телефона <i>*</i></label>
+                    <input type="tel" name="phone_number" id="phone_number" required placeholder="Ваш номер телефона">
+                </div> 
+                <div class="inp-wrap">
+                    <label>Услуга</label>
+                    <select name="sevice">
+                        <option value="Консультация">Консультация</option>
+                        <option value="Узаконивание недвижимости">Узаконивание недвижимости</option>
+                        <option value="Сопровождение сделок с недвижимостью">Сопровождение сделок с недвижимостью</option>
+                        <option value="Аутсорсинг агентств недвижимости">Аутсорсинг агентств недвижимости</option>
+                        <option value="Аутсорсинг агентств недвижимости">Аутсорсинг агентств недвижимости</option>
+                        <option value="Предпродажная подготовка">Предпродажная подготовка</option>
+                        <option value="Судебные споры с недвижимостью">Судебные споры с недвижимостью</option>
+                        <option value="Представительство в суде со всеми полномочиями">Представительство в суде со всеми полномочиями</option>
+                        <option value="Подготовка официальных документов">Подготовка официальных документов</option>
+                        <option value="Проведение обучений в сфере недвижимости">Проведение обучений в сфере недвижимости</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-thanks">
+        <div class="modal-content">
+            <button class="modal-close">&#x2715</button>
+            <h3>Спасибо, за заявку</h3>
+            <p>Ожидайте с вами свяжется специалист!</p>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.4.1.min.js" defer></script>
+    <script src="./js/jquery.inputmask.min.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+
+</body>
+
+</html>
