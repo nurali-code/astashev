@@ -5,7 +5,7 @@
 @import 'modal'
 
 .main
-    min-height: 96vh
+    min-height: 94vh
     max-height: 1200px
     position: relative
     display: flex
@@ -22,10 +22,9 @@
         background: linear-gradient(179.74deg, rgba(24, 24, 35, 0.46) 0.2%, rgba(24, 24, 35, 0) 10.56%), linear-gradient(90.21deg, rgba(0, 0, 0, 0.15) 0.17%, rgba(0, 0, 0, 0.15) 45.64%, rgba(0, 0, 0, 0) 60.4%)
 
     &-content
-        padding-top: 20px
-        padding-bottom: 100px
+        padding-top: 10px
+        padding-bottom: 150px
         margin: auto
-        position: static
 
     &__img
         position: absolute
@@ -39,13 +38,173 @@
 
     p
         max-width: 49%
-        font-size: 32px
+        // font-size: 32px
         margin-bottom: 40px
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6)
 
     h1
         margin: 0 0 28px
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5)
+
+    .author
+        font-family: 'IBM Plex Serif', serif
+        text-transform: uppercase
+        font-size: 24px
+        position: absolute
+        bottom: 20%
+        right: 10%
+        z-index: -1
+        background-color: $yelow
+        box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25)
+        text-shadow: none
+        color: #000
+        text-align: center
+        line-height: 130%
+        padding: 20px 40px 24px
+
+.services
+    overflow: hidden
+    &__list
+        background-color: #fff
+        position: relative
+        top: -100px
+        width: 100%
+        max-width: 1600px
+        margin: 0 auto
+        display: flex
+        align-items: center
+        gap: 10px
+        justify-content: center
+        list-style: none
+        box-shadow: 0px 3px 97px rgba(0, 0, 0, 0.25)
+        a
+            opacity: 1 !important
+            text-align: center
+            padding: 33px
+            display: inline-block
+            z-index: 1
+            position: relative
+            &::before
+                content: ''
+                display: none
+                width: 100%
+                height: 120%
+                top: -10%
+                left: 0
+                position: absolute
+                z-index: -11
+                background-color: $prime
+                box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.15)
+            &.active
+                color: #fff
+                img
+                    filter: invert(10)
+                &::before
+                    display: block
+
+        img
+            margin-bottom: 15px
+
+        b
+            display: block
+            font-size: 24px
+            line-height: 29px
+        p
+            margin: 0
+            font-size: 20px
+            line-height: 29px
+
+    .item
+        display: flex
+        justify-content: space-between
+        padding: 50px 0
+        &:nth-of-type(even)
+            position: relative
+            z-index: 1
+            &::before
+                content: ''
+                display: block
+                width: 100vw
+                height: 100%
+                z-index: -1
+                position: absolute
+                background-color: $yelow
+                left: 50%
+                top: 0
+                transform: translateX(-50%)
+
+        img
+            width: 110px
+            min-width: 110px
+            align-self: flex-start
+
+        .title
+            max-width: 65%
+            padding-right: 40px
+
+        .price
+            margin: 0 0 22px
+            text-align: right
+            font-weight: 500
+            font-size: 36px
+            line-height: 140%
+
+    .box
+        background: linear-gradient(42.8deg, #2543A0 3.92%, #537FE7 100%)
+        padding: 42px 42px 0
+        margin-bottom: 4%
+        width: 48%
+        color: #fff
+        p
+            margin: 0
+
+        .heading
+            font-weight: 600
+            font-size: 26px
+            line-height: 32px
+            width: calc( 100% - 130px )
+            span
+                display: block
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+
+        .price
+            font-weight: 600
+            font-size: 26px
+            line-height: 32px
+
+        img
+            min-width: 95px
+
+        .wrap
+            margin-bottom: 42px
+
+        .btn
+            background-color: #fff
+            color: #000
+
+@media screen and ( max-width: 1600px )
+    .main
+        &-content
+            padding-bottom: 60px
+    .services
+        &__list
+            top: -40px
+            max-width: 92%
+            gap: 5px
+            a
+
+            p
+                font-size: 16px
+                line-height: 100%
+            b
+                font-size: 18px
+                margin-bottom: 0
+
+            img
+                max-width: 60px
+                margin-bottom: 3px
 
 @media screen and ( max-width: 1200px )
     .main
@@ -67,12 +226,6 @@
             margin-bottom: 30px
 
         &__img
-            position: relative
-            left: -16px
-            width: 100vw
-            max-width: unset
-            height: 300px
-            margin: 0
 
         .btn
             display: none

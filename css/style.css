@@ -246,9 +246,9 @@ h2 {
 
 h3 {
   font-weight: 800;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 130%;
-  margin-bottom: 32px;
+  margin-bottom: 15px;
 }
 
 h4 {
@@ -315,7 +315,7 @@ section {
   vertical-align: middle;
   text-align: center;
   color: #fff;
-  padding: 20px 84px 18px;
+  padding: 20px 44px 18px;
   background-color: #537FE7;
   min-width: 200px;
   -webkit-box-shadow: 0px 31px 27px -23px rgba(83, 127, 231, 0.31);
@@ -328,6 +328,7 @@ section {
      -moz-background-size: 40px 40px;
        -o-background-size: 40px 40px;
           background-size: 40px 40px;
+  min-width: 230px;
 }
 .btn span {
   display: block;
@@ -862,10 +863,11 @@ header .container {
   z-index: unset;
 }
 header .logo {
-  margin: 0 20px 0 0 !important;
+  margin: 0 20px 2px 0 !important;
   text-transform: uppercase;
   font-weight: bold;
-  line-height: 150%;
+  font-size: 46px;
+  line-height: 120%;
   font-family: "IBM Plex Serif", serif;
   text-shadow: none !important;
 }
@@ -890,7 +892,8 @@ header .nav__link {
 }
 header .nav__link:hover {
   opacity: 1;
-  background-color: rgba(233, 248, 249, 0.5);
+  color: #000;
+  background-color: #E9F8F9;
 }
 header .btn {
   padding: 16px 45px 15px;
@@ -1237,7 +1240,7 @@ header .btn-menu {
   }
 }
 .main {
-  min-height: 96vh;
+  min-height: 94vh;
   max-height: 1200px;
   position: relative;
   display: -webkit-box;
@@ -1268,10 +1271,9 @@ header .btn-menu {
   background: linear-gradient(179.74deg, rgba(24, 24, 35, 0.46) 0.2%, rgba(24, 24, 35, 0) 10.56%), linear-gradient(90.21deg, rgba(0, 0, 0, 0.15) 0.17%, rgba(0, 0, 0, 0.15) 45.64%, rgba(0, 0, 0, 0) 60.4%);
 }
 .main-content {
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 150px;
   margin: auto;
-  position: static;
 }
 .main__img {
   position: absolute;
@@ -1286,7 +1288,6 @@ header .btn-menu {
 }
 .main p {
   max-width: 49%;
-  font-size: 32px;
   margin-bottom: 40px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -1294,7 +1295,217 @@ header .btn-menu {
   margin: 0 0 28px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.main .author {
+  font-family: "IBM Plex Serif", serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  z-index: -1;
+  background-color: #E9F8F9;
+  -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  text-shadow: none;
+  color: #000;
+  text-align: center;
+  line-height: 130%;
+  padding: 20px 40px 24px;
+}
 
+.services {
+  overflow: hidden;
+}
+.services__list {
+  background-color: #fff;
+  position: relative;
+  top: -100px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  -webkit-box-shadow: 0px 3px 97px rgba(0, 0, 0, 0.25);
+     -moz-box-shadow: 0px 3px 97px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 97px rgba(0, 0, 0, 0.25);
+}
+.services__list a {
+  opacity: 1 !important;
+  text-align: center;
+  padding: 33px;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
+.services__list a::before {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 120%;
+  top: -10%;
+  left: 0;
+  position: absolute;
+  z-index: -11;
+  background-color: #537FE7;
+  -webkit-box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.15);
+}
+.services__list a.active {
+  color: #fff;
+}
+.services__list a.active img {
+  -webkit-filter: invert(10);
+          filter: invert(10);
+}
+.services__list a.active::before {
+  display: block;
+}
+.services__list img {
+  margin-bottom: 15px;
+}
+.services__list b {
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+}
+.services__list p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 29px;
+}
+.services .item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+.services .item:nth-of-type(even) {
+  position: relative;
+  z-index: 1;
+}
+.services .item:nth-of-type(even)::before {
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  background-color: #E9F8F9;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+     -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.services .item img {
+  width: 110px;
+  min-width: 110px;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+.services .item .title {
+  max-width: 65%;
+  padding-right: 40px;
+}
+.services .item .price {
+  margin: 0 0 22px;
+  text-align: right;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 140%;
+}
+.services .box {
+  background: -webkit-linear-gradient(47.2deg, #2543A0 3.92%, #537FE7 100%);
+  background: -moz-linear-gradient(47.2deg, #2543A0 3.92%, #537FE7 100%);
+  background: -o-linear-gradient(47.2deg, #2543A0 3.92%, #537FE7 100%);
+  background: linear-gradient(42.8deg, #2543A0 3.92%, #537FE7 100%);
+  padding: 42px 42px 0;
+  margin-bottom: 4%;
+  width: 48%;
+  color: #fff;
+}
+.services .box p {
+  margin: 0;
+}
+.services .box .heading {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+  width: -webkit-calc(100% - 130px);
+  width: -moz-calc(100% - 130px);
+  width: calc(100% - 130px);
+}
+.services .box .heading span {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.services .box .price {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 32px;
+}
+.services .box img {
+  min-width: 95px;
+}
+.services .box .wrap {
+  margin-bottom: 42px;
+}
+.services .box .btn {
+  background-color: #fff;
+  color: #000;
+}
+
+@media screen and (max-width: 1600px) {
+  .main-content {
+    padding-bottom: 60px;
+  }
+  .services__list {
+    top: -40px;
+    max-width: 92%;
+    gap: 5px;
+  }
+  .services__list p {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .services__list b {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .services__list img {
+    max-width: 60px;
+    margin-bottom: 3px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .main {
     text-align: center;
@@ -1316,14 +1527,6 @@ header .btn-menu {
     margin: 0 auto 40px;
     max-width: 100%;
     margin-bottom: 30px;
-  }
-  .main__img {
-    position: relative;
-    left: -16px;
-    width: 100vw;
-    max-width: unset;
-    height: 300px;
-    margin: 0;
   }
   .main .btn {
     display: none;

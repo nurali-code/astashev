@@ -5,17 +5,18 @@ header
         z-index: unset
 
     .logo
-        margin: 0 20px 0 0 !important
+        margin: 0 20px 2px 0 !important
         text-transform: uppercase
         font-weight: bold
-        line-height: 150%
+        font-size: 46px
+        line-height: 120%
         font-family: 'IBM Plex Serif', serif
         text-shadow: none !important
 
-    .phone 
-        color: #fff 
+    .phone
+        color: #fff
         text-align: right
-        b 
+        b
             color: #fff
 
     .nav
@@ -30,12 +31,13 @@ header
             text-transform: uppercase
             &:hover
                 opacity: 1
-                background-color: rgba($yelow, .5)
+                color: #000
+                background-color: $yelow
 
     .btn
         padding: 16px 45px 15px
-        margin: 0 0 0 36px 
-        &-menu 
+        margin: 0 0 0 36px
+        &-menu
             display: none
 
     @media screen and ( max-width: 1500px )
