@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="yandex-verification" content="d7decdc3f1939dc4" />
-    <title>Диоксид | Крупнейший производитель Углекислоты</title>
+    <title>Асташев Евгений Александрович | Юридические улуги в сфере недвижимости</title>
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -17,9 +17,9 @@
             <div class="container wrap">
                 <p class="logo">Асташев</p>
                 <nav class="nav wrap">
-                    <a href="#certificate" class="nav__link">Услуги</a>
-                    <a href="#product" class="nav__link">Отзывы</a>
-                    <a href="#footer" class="nav__link">Контакты</a>
+                    <a href="#services" class="nav__link">Услуги</a>
+                    <a href="#reviews" class="nav__link">Отзывы</a>
+                    <a href="#contacts" class="nav__link">Контакты</a>
                 </nav>
                 <a href="tel:89831859660" class="phone">
                     <span>Телефон для справок:</span>
@@ -32,20 +32,26 @@
 
         <div class="main-content container">
             <h1>
-                <b>Юридические <br> улуги</b> в сфере <br>
+                <b>Юридические улуги</b> в сфере
                 недвижимости
             </h1>
             <p>
                 Запишитесь на бесплатный прием <br> к узкопрофильному юристу
             </p>
+            <a href="tel:89831859660" class="phone">
+                <span>Телефон для справок:</span>
+                <b>8(983)185-96-60</b>
+            </a>
             <button data-modal="modal-form" class="btn">заказать</button>
             <p class="author">
                 <b>Асташев евгений</b> <br>
                 александрович
             </p>
         </div>
-
-        <img src="img/main.jpg" loading="lazy" class="main__img" alt="Асташев Евгений Александрович">
+        <picture>
+            <source media="(min-width:1100px)" srcset="img/main.jpg">
+            <img src="img/main-mob.jpg" loading="lazy" class="main__img" alt="Асташев Евгений Александрович">
+        </picture>
 
     </main>
 
@@ -53,24 +59,24 @@
         <a href="#item-2">
             <img src="img/icon-2.svg" alt="icon">
             <p>
-                <b>Сопровождение</b>
-                сделок с недвижимостью
+                <b>Узаконивание</b>
+                недвижимости
             </p>
         </a>
         <a href="#item-1" class="active">
             <img src="img/icon-1.svg" alt="icon">
             <p>
-                <b>Узаконивание</b>
-                недвижимости
+                <b>Сопровождение</b>
+                сделок с недвижимостью
             </p>
         </a>
-        <a href="#item-3">
+        <a href="#item-4">
             <img src="img/icon-3.svg" alt="icon">
             <p>
                 <b> Предпродажная</b> подготовка
             </p>
         </a>
-        <a href="#item-4">
+        <a href="#item-3">
             <img src="img/icon-4.svg" alt="icon">
             <p>
                 <b>Аутсорсинг</b>
@@ -86,13 +92,15 @@
         </a>
     </nav>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2>Услуги</h2>
             <div class="item" id="item-1">
-                <img src="img/icon-1.svg" alt="icon">
                 <div class="title">
-                    <h3>Сопровождение сделок с недвижимостью</h3>
+                    <h3>
+                        <img src="img/icon-1.svg" alt="icon">
+                        Сопровождение сделок с недвижимостью
+                    </h3>
                     <p>Помощь в проведении юридически чистой сделки с недвижимостью, которая включает в себя:</p>
                     <div class="dropdown">
                         <button class="dropdown-btn">подробнее</button>
@@ -126,9 +134,11 @@
                 </div>
             </div>
             <div class="item" id="item-2">
-                <img src="img/icon-2.svg" alt="icon">
                 <div class="title">
-                    <h3>Узаконение недвижимости</h3>
+                    <h3>
+                        <img src="img/icon-2.svg" alt="icon">
+                        Узаконение недвижимости
+                    </h3>
                     <p>
                         Здесь Вы можете обратиться с вопросом оформления целиком жилого дома в собственность, узаконение
                         его пристроев, реконструкции, достройки второго этажа, раздел на квартиры либо отдельные жилые
@@ -136,28 +146,12 @@
                     </p>
                     <div class="dropdown">
                         <button class="dropdown-btn">подробнее</button>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li>
-                                    запрос первичных документов проведения сделки;
-                                </li>
-                                <li>
-                                    правовая экспертиза сторон сделки, Объекта недвижимости;
-                                </li>
-                                <li>
-                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
-                                    документов для качественного и безопасного проведения сделки, оказание помощи в
-                                    проведении переговоров;
-                                </li>
-                                <li>
-                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
-                                </li>
-                                <li>
-                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
-                                    минимизировать либо устранить риски по сделке.
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="dropdown-content">
+                            (возможен как судебный, так и досудебный порядок решения вопроса). Кроме того, возможность
+                            узаконения земельного участка в собственность (в том числе получение его бесплатно),
+                            определение границ земельного участка, раздел земельного участка либо выдел в личную
+                            собственность, перераспределение границ смежных земельных участков.
+                        </p>
                     </div>
                 </div>
                 <div class="action">
@@ -170,37 +164,23 @@
                 </div>
             </div>
             <div class="item" id="item-3">
-                <img src="img/icon-3.svg" alt="icon">
                 <div class="title">
-                    <h3>Аутсорсинг агентств недвижимости</h3>
+                    <h3>
+                        <img src="img/icon-4.svg" alt="icon">
+                        Аутсорсинг агентств недвижимости
+                    </h3>
                     <p>
                         Здесь Вы можете обратиться за помощью в юридическом сопровождении сделок с недвижимостью без
                         штатной единицы юриста в Вашем агентстве недвижимости
                     </p>
                     <div class="dropdown">
                         <button class="dropdown-btn">подробнее</button>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li>
-                                    запрос первичных документов проведения сделки;
-                                </li>
-                                <li>
-                                    правовая экспертиза сторон сделки, Объекта недвижимости;
-                                </li>
-                                <li>
-                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
-                                    документов для качественного и безопасного проведения сделки, оказание помощи в
-                                    проведении переговоров;
-                                </li>
-                                <li>
-                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
-                                </li>
-                                <li>
-                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
-                                    минимизировать либо устранить риски по сделке.
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="dropdown-content">
+                            (получение консультаций, проведение правовой экспертизы сделки, подготовка необходимых
+                            документов к сделке любой сложности, аудит сделки с подготовкой перечня документов,
+                            необходимых для юридически чистого проведения сделки), возможность проведения обучений по
+                            юридическим аспектам сделки.
+                        </p>
                     </div>
                 </div>
                 <div class="action">
@@ -209,37 +189,24 @@
                 </div>
             </div>
             <div class="item" id="item-4">
-                <img src="img/icon-4.svg" alt="icon">
                 <div class="title">
-                    <h3>Предпродажная подготовка</h3>
+                    <h3>
+                        <img src="img/icon-3.svg" alt="icon">
+                        Предпродажная подготовка
+                    </h3>
                     <p>
                         В данном блоке необходимо проведение первичной консультации с изучением представленных
                         документов на продаваемый Вами Объект недвижимости.
                     </p>
                     <div class="dropdown">
                         <button class="dropdown-btn">подробнее</button>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li>
-                                    запрос первичных документов проведения сделки;
-                                </li>
-                                <li>
-                                    правовая экспертиза сторон сделки, Объекта недвижимости;
-                                </li>
-                                <li>
-                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
-                                    документов для качественного и безопасного проведения сделки, оказание помощи в
-                                    проведении переговоров;
-                                </li>
-                                <li>
-                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
-                                </li>
-                                <li>
-                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
-                                    минимизировать либо устранить риски по сделке.
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="dropdown-content">
+                            Здесь и выявляются все «подводные камни» отсутствия или несоответствия документов, а также
+                            иные нюансы, которые не позволят Вам провести продажу (необходимо подготовить определенные
+                            документы, необходимо оформление права собственности, документы устарели, необходимо в
+                            судебном порядке признавать право собственности, необходимо обжаловать нарушенное в
+                            отношении Вас право, помощь в оформлении приватизации, наследства и т.д.).
+                        </p>
                     </div>
                 </div>
                 <div class="action">
@@ -248,37 +215,22 @@
                 </div>
             </div>
             <div class="item" id="item-5">
-                <img src="img/icon-5.svg" alt="icon">
                 <div class="title">
-                    <h3>Судебные споры с недвижимостью</h3>
+                    <h3>
+                        <img src="img/icon-5.svg" alt="icon">
+                        Судебные споры с недвижимостью
+                    </h3>
                     <p>
                         Если в отношении Вас нарушается право, связанное с приобретением (продажей) Объекта
                         недвижимости, оформлением право собственности на Объект недвижимости,
                     </p>
                     <div class="dropdown">
                         <button class="dropdown-btn">подробнее</button>
-                        <div class="dropdown-content">
-                            <ul>
-                                <li>
-                                    запрос первичных документов проведения сделки;
-                                </li>
-                                <li>
-                                    правовая экспертиза сторон сделки, Объекта недвижимости;
-                                </li>
-                                <li>
-                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
-                                    документов для качественного и безопасного проведения сделки, оказание помощи в
-                                    проведении переговоров;
-                                </li>
-                                <li>
-                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
-                                </li>
-                                <li>
-                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
-                                    минимизировать либо устранить риски по сделке.
-                                </li>
-                            </ul>
-                        </div>
+                        <p class="dropdown-content">
+                            оформлением право собственности на Объект недвижимости, необходимо представление интересов в
+                            суде по выписке зарегистрированных лиц, принудительному выкупу доли в Объекте недвижимости,
+                            а также иные споры, связанные с недвижимостью.
+                        </p>
                     </div>
                 </div>
                 <div class="action">
@@ -286,7 +238,7 @@
                     <button data-modal="modal-form" class="btn">Записаться</button>
                 </div>
             </div>
-            <div class="wrap">
+            <div class="wrap box-wrap">
                 <div class="box">
                     <div class="wrap">
                         <img src="img/icon-6.svg" alt="img">
@@ -299,7 +251,7 @@
                     </div>
                     <div class="wrap">
                         <button data-modal="modal-form" class="btn">Записаться</button>
-                        <p class="price">1 000 ₽ </p>
+                        <p class="price"><b>1 000 ₽</b></p>
                     </div>
                 </div>
                 <div class="box">
@@ -309,7 +261,7 @@
                     </div>
                     <div class="wrap">
                         <button data-modal="modal-form" class="btn">Записаться</button>
-                        <p class="price">1 000 ₽ </p>
+                        <p class="price"><b>1 000 ₽</b></p>
                     </div>
                 </div>
                 <div class="box">
@@ -319,7 +271,7 @@
                     </div>
                     <div class="wrap">
                         <button data-modal="modal-form" class="btn">Записаться</button>
-                        <p class="price">1 000 ₽ </p>
+                        <p class="price"><b>1 000 ₽</b></p>
                     </div>
                 </div>
                 <div class="box">
@@ -329,7 +281,7 @@
                     </div>
                     <div class="wrap">
                         <button data-modal="modal-form" class="btn">Записаться</button>
-                        <p class="price">1 000 ₽ </p>
+                        <p class="price">от <b>1 500 ₽</b>/час.</p>
                     </div>
                 </div>
             </div>
@@ -413,12 +365,17 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <h2 class="container">Отзывы моих клиентов</h2>
         <div class="reviews-slider wrap">
             <div class="review">
                 <p class="review-body">
-                    Помог оформить в собственность земельный участок, который даже на кадастровой учете не стоял, бесплатно забрали у администрации
+                    <a href="#" target="_blank" class="blank">
+                        <img src="img/twitter.svg" alt="twitter">
+                        <span>Открыть отзыв</span>
+                    </a>
+                    Помог оформить в собственность земельный участок, который даже на кадастровой учете не стоял,
+                    бесплатно забрали у администрации
                 </p>
                 <div class="wrapper">
                     <img src="img/review-1.jpg" alt="review">
@@ -430,7 +387,12 @@
             </div>
             <div class="review">
                 <p class="review-body">
-                    Риэлтор с Краснодара. Оказывал ему услугу аусорсинга и помогал в проведении личной сделки. Все дистанционно, очень доволен работой моей
+                    <a href="#" target="_blank" class="blank">
+                        <img src="img/instagram.svg" alt="instagram">
+                        <span>Открыть отзыв</span>
+                    </a>
+                    Риэлтор с Краснодара. Оказывал ему услугу аусорсинга и помогал в проведении личной сделки. Все
+                    дистанционно, очень доволен работой моей
                 </p>
                 <div class="wrapper">
                     <img src="img/review-2.jpg" alt="review">
@@ -442,7 +404,12 @@
             </div>
             <div class="review">
                 <p class="review-body">
-                    Клиент помогал с уточнением границ красных линий земельного участка и узаконением реконструкции дома. Все прошло хорошо)
+                    <a href="#" target="_blank" class="blank">
+                        <img src="img/facebook.svg" alt="facebook">
+                        <span>Открыть отзыв</span>
+                    </a>
+                    Клиент помогал с уточнением границ красных линий земельного участка и узаконением реконструкции
+                    дома. Все прошло хорошо)
                 </p>
                 <div class="wrapper">
                     <img src="img/review-3.jpg" alt="review">
@@ -454,6 +421,49 @@
             </div>
         </div>
     </section>
+
+    <footer id="contacts">
+        <iframe src=""></iframe>
+        <div class="container">
+            <p class="descr">Свяжитесь со мной любым удобным способом!</p>
+            <h2>мои контакты</h2>
+            <p class="text">
+                Я нахожусь по адресу, указанному на карте, и доступен по телефону и электронной почте. <br>
+                Также вы можете связаться со мной через социальные сети
+            </p>
+            <button class="btn" data-modal="modal-form">Записаться</button>
+            <div class="wrap middle">
+                <a href="tel:89831859660" class="phone">
+                    <span>Телефон:</span>
+                    <b>8(983)185-96-60</b>
+                </a>
+                <span class="phone">
+                    <span>
+                        © 2019 Асташев <br>
+                        123 Market St. #22B <br>
+                        Charlottesville, California 44635
+                    </span>
+                </span>
+                <a href="mailto:89831859660" class="phone">
+                    <span>Email:</span>
+                    <b>info@astashev.ru</b>
+                </a>
+            </div>
+            <div class="wrap bottom">
+                <a href="#main" class="logo">Асташев</a>
+                <nav>
+                    <a href="#">Обо мне</a>
+                    <a href="#">Преимушества</a>
+                    <a href="#">Услуги</a>
+                </nav>
+                <div class="social">
+                    <a href="#"><img src="img/linkedin.svg" alt="linkedin"></a>
+                    <a href="#"><img src="img/Facebook-2.svg" alt="facebook"></a>
+                    <a href="#"><img src="img/Instagram(1).svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <div class="modal" id="modal-menu">
         <div class="modal-content">

@@ -99,13 +99,12 @@
             &-content
                 transform: none
                 top: 0
-                right: 0
-                left: auto
+                right: auto
+                left: 0
                 max-width: 600px
                 height: 100%
                 max-height: 100%
                 animation: slideRightOut .3s cubic-bezier(0.4, -0.02, 0, 0.96) forwards
-                // transform: translateX(100%)
 
         nav
             padding: 30px 0 20px
@@ -192,11 +191,11 @@
 
 @keyframes slideRight
     0%
-        transform: translateX(100%)
+        transform: translateX(-100%)
     100%
         transform: translateX(0%)
 @keyframes slideRightOut
     0%
         transform: translateX(0%)
     100%
-        transform: translateX(100%)
+        transform: translateX(-100%)

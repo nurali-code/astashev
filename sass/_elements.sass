@@ -261,6 +261,15 @@ section
         font-size: 58px
         line-height: 110%
 
+.logo
+    margin: 0 
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 46px
+    line-height: 120%
+    font-family: 'IBM Plex Serif', serif
+    text-shadow: none !important
+
 .dropdown
     &-btn
         text-transform: uppercase
@@ -269,13 +278,15 @@ section
         padding-right: 30px
         background-image: url('../img/arrow-down.svg')
         background-repeat: no-repeat
-        background-position: center right 
+        background-position: center right
         background-size: 20px auto
         padding-right: 24px
 
     &-content
         padding-top: 15px
         display: none
+        margin: 0
+        opacity: .5
 
 .wrapper, .wrap, .wrap-strech, .wrap-start
     display: flex
@@ -358,12 +369,23 @@ textarea
     padding: 8px 10px 0
     height: unset
 
-@media screen and ( max-width: 1500px )
+@media screen and ( max-width: 1600px )
     .container
         max-width: 1200px
 
     h1
-        font-size: 48px
+        font-size: 44px
+
+    .phone
+        span 
+            font-size: 14px
+        b 
+            font-size: 20px 
+
+    .logo 
+        font-size: 36px
+
+
 
 @media screen and ( max-width: 1200px )
     p
@@ -443,6 +465,9 @@ textarea
                     top: -8px
                 &::after
                     top: 8px
+
+    .logo 
+        font-size: 30px
 
     input,
     textarea,
