@@ -50,34 +50,34 @@
     </main>
 
     <nav class="services__list">
-        <a href="#">
-            <img src="img/icon-1.svg" alt="icon">
-            <p>
-                <b>Узаконивание</b>
-                недвижимости
-            </p>
-        </a>
-        <a href="#" class="active">
+        <a href="#item-2">
             <img src="img/icon-2.svg" alt="icon">
             <p>
                 <b>Сопровождение</b>
                 сделок с недвижимостью
             </p>
         </a>
-        <a href="#">
+        <a href="#item-1" class="active">
+            <img src="img/icon-1.svg" alt="icon">
+            <p>
+                <b>Узаконивание</b>
+                недвижимости
+            </p>
+        </a>
+        <a href="#item-3">
             <img src="img/icon-3.svg" alt="icon">
             <p>
                 <b> Предпродажная</b> подготовка
             </p>
         </a>
-        <a href="#">
+        <a href="#item-4">
             <img src="img/icon-4.svg" alt="icon">
             <p>
                 <b>Аутсорсинг</b>
                 агенств недвижимости
             </p>
         </a>
-        <a href="#">
+        <a href="#item-5">
             <img src="img/icon-5.svg" alt="icon">
             <p>
                 <b>Судебные споры</b>
@@ -85,21 +85,47 @@
             </p>
         </a>
     </nav>
+
     <section class="services">
         <div class="container">
             <h2>Услуги</h2>
-            <div class="item">
+            <div class="item" id="item-1">
                 <img src="img/icon-1.svg" alt="icon">
                 <div class="title">
                     <h3>Сопровождение сделок с недвижимостью</h3>
                     <p>Помощь в проведении юридически чистой сделки с недвижимостью, которая включает в себя:</p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">подробнее</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    запрос первичных документов проведения сделки;
+                                </li>
+                                <li>
+                                    правовая экспертиза сторон сделки, Объекта недвижимости;
+                                </li>
+                                <li>
+                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
+                                    документов для качественного и безопасного проведения сделки, оказание помощи в
+                                    проведении переговоров;
+                                </li>
+                                <li>
+                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
+                                </li>
+                                <li>
+                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
+                                    минимизировать либо устранить риски по сделке.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="action">
                     <p class="price">от <b>30 000 ₽</b></p>
-                    <button class="btn">Записаться</button>
+                    <button data-modal="modal-form" class="btn">Записаться</button>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="item-2">
                 <img src="img/icon-2.svg" alt="icon">
                 <div class="title">
                     <h3>Узаконение недвижимости</h3>
@@ -108,13 +134,42 @@
                         его пристроев, реконструкции, достройки второго этажа, раздел на квартиры либо отдельные жилые
                         блоки, перевод из жилого помещения в нежилое и т.д.
                     </p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">подробнее</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    запрос первичных документов проведения сделки;
+                                </li>
+                                <li>
+                                    правовая экспертиза сторон сделки, Объекта недвижимости;
+                                </li>
+                                <li>
+                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
+                                    документов для качественного и безопасного проведения сделки, оказание помощи в
+                                    проведении переговоров;
+                                </li>
+                                <li>
+                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
+                                </li>
+                                <li>
+                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
+                                    минимизировать либо устранить риски по сделке.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="action">
-                    <p class="price">от <b>30 000 ₽</b></p>
-                    <button class="btn">Записаться</button>
+                    <p class="price sm">
+                        от <b>5 000₽</b> <br>
+                        до <b>10 000₽</b> за сделку <br>
+                        <span>и от <b>20 000₽ </b> в месяц</span>
+                    </p>
+                    <button data-modal="modal-form" class="btn">Записаться</button>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="item-3">
                 <img src="img/icon-3.svg" alt="icon">
                 <div class="title">
                     <h3>Аутсорсинг агентств недвижимости</h3>
@@ -122,13 +177,38 @@
                         Здесь Вы можете обратиться за помощью в юридическом сопровождении сделок с недвижимостью без
                         штатной единицы юриста в Вашем агентстве недвижимости
                     </p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">подробнее</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    запрос первичных документов проведения сделки;
+                                </li>
+                                <li>
+                                    правовая экспертиза сторон сделки, Объекта недвижимости;
+                                </li>
+                                <li>
+                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
+                                    документов для качественного и безопасного проведения сделки, оказание помощи в
+                                    проведении переговоров;
+                                </li>
+                                <li>
+                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
+                                </li>
+                                <li>
+                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
+                                    минимизировать либо устранить риски по сделке.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="action">
                     <p class="price">от <b>30 000 ₽</b></p>
-                    <button class="btn">Записаться</button>
+                    <button data-modal="modal-form" class="btn">Записаться</button>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="item-4">
                 <img src="img/icon-4.svg" alt="icon">
                 <div class="title">
                     <h3>Предпродажная подготовка</h3>
@@ -136,13 +216,38 @@
                         В данном блоке необходимо проведение первичной консультации с изучением представленных
                         документов на продаваемый Вами Объект недвижимости.
                     </p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">подробнее</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    запрос первичных документов проведения сделки;
+                                </li>
+                                <li>
+                                    правовая экспертиза сторон сделки, Объекта недвижимости;
+                                </li>
+                                <li>
+                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
+                                    документов для качественного и безопасного проведения сделки, оказание помощи в
+                                    проведении переговоров;
+                                </li>
+                                <li>
+                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
+                                </li>
+                                <li>
+                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
+                                    минимизировать либо устранить риски по сделке.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="action">
                     <p class="price">от <b>30 000 ₽</b></p>
-                    <button class="btn">Записаться</button>
+                    <button data-modal="modal-form" class="btn">Записаться</button>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" id="item-5">
                 <img src="img/icon-5.svg" alt="icon">
                 <div class="title">
                     <h3>Судебные споры с недвижимостью</h3>
@@ -150,10 +255,35 @@
                         Если в отношении Вас нарушается право, связанное с приобретением (продажей) Объекта
                         недвижимости, оформлением право собственности на Объект недвижимости,
                     </p>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">подробнее</button>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    запрос первичных документов проведения сделки;
+                                </li>
+                                <li>
+                                    правовая экспертиза сторон сделки, Объекта недвижимости;
+                                </li>
+                                <li>
+                                    анализ ситуации и возможности проведения сделки, подготовка всех необходимых
+                                    документов для качественного и безопасного проведения сделки, оказание помощи в
+                                    проведении переговоров;
+                                </li>
+                                <li>
+                                    устное консультирование о ходе сделки, минимизация либо устранение рисков по сделке;
+                                </li>
+                                <li>
+                                    подготовка перечня документов, необходимых для проведения сделки, позволяющих
+                                    минимизировать либо устранить риски по сделке.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="action">
                     <p class="price">от <b>30 000 ₽</b></p>
-                    <button class="btn">Записаться</button>
+                    <button data-modal="modal-form" class="btn">Записаться</button>
                 </div>
             </div>
             <div class="wrap">
@@ -168,7 +298,7 @@
                         </p>
                     </div>
                     <div class="wrap">
-                        <button class="btn">Записаться</button>
+                        <button data-modal="modal-form" class="btn">Записаться</button>
                         <p class="price">1 000 ₽ </p>
                     </div>
                 </div>
@@ -178,7 +308,7 @@
                         <p class="heading">Представительство в суде со всеми полномочиями</p>
                     </div>
                     <div class="wrap">
-                        <button class="btn">Записаться</button>
+                        <button data-modal="modal-form" class="btn">Записаться</button>
                         <p class="price">1 000 ₽ </p>
                     </div>
                 </div>
@@ -188,7 +318,7 @@
                         <p class="heading">Подготовка официальных документов</p>
                     </div>
                     <div class="wrap">
-                        <button class="btn">Записаться</button>
+                        <button data-modal="modal-form" class="btn">Записаться</button>
                         <p class="price">1 000 ₽ </p>
                     </div>
                 </div>
@@ -198,9 +328,128 @@
                         <p class="heading">Проведение обучений в сфере недвижимости</p>
                     </div>
                     <div class="wrap">
-                        <button class="btn">Записаться</button>
+                        <button data-modal="modal-form" class="btn">Записаться</button>
                         <p class="price">1 000 ₽ </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>преимущества <br> работы со мной</h2>
+            <div class="wrap">
+                <div class="features-content">
+                    <div class="item">
+                        <img src="img/i-1.svg" alt="icon">
+                        <p>
+                            Член ассоциации юристов России <span>(в конце марта будет известно по вступлению)</span>
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-2.svg" alt="icon">
+                        <p>
+                            Многолетний юридический опыт работы в узконаправленной сфере
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-3.svg" alt="icon">
+                        <p>
+                            Проведение, а также помощь в проведении более <b>5 000 сделок</b> с недвижимостью различной
+                            категории сложности;
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-4.svg" alt="icon">
+                        <p>
+                            Возможность работы <br> на «удаленке»
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-5.svg" alt="icon">
+                        <p>
+                            Отсутствие рисковых сделок за всю практическую деятельность
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-6.svg" alt="icon">
+                        <p>
+                            Решение большинства споров в досудебном порядке
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-7.svg" alt="icon">
+                        <p>
+                            Положительный опыт судебной практики по спорам с недвижимостью
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-8.svg" alt="icon">
+                        <p>
+                            Обширные и обновленные знания в сфере налогообложения, работы с жилищными сертификатами,
+                            знаний тонкостей и нюансов сделки с недвижимостью
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="img/i-9.svg" alt="icon">
+                        <p>
+                            Положительная обратная связь от клиентов, агентов по недвижимости.
+                        </p>
+                    </div>
+                </div>
+                <div class="features-img">
+                    <img src="img/features.jpg" alt="features">
+                    <p class="info">
+                        <b>10+</b>
+                        лет опыта
+                    </p>
+                    <p class="info">
+                        <b>5000+</b>
+                        сделок с недвижимостью
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <h2 class="container">Отзывы моих клиентов</h2>
+        <div class="reviews-slider wrap">
+            <div class="review">
+                <p class="review-body">
+                    Помог оформить в собственность земельный участок, который даже на кадастровой учете не стоял, бесплатно забрали у администрации
+                </p>
+                <div class="wrapper">
+                    <img src="img/review-1.jpg" alt="review">
+                    <p>
+                        <span class="name">Руденко Анна</span>
+                        <span class="descr">Дело о жилишнем споре</span>
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <p class="review-body">
+                    Риэлтор с Краснодара. Оказывал ему услугу аусорсинга и помогал в проведении личной сделки. Все дистанционно, очень доволен работой моей
+                </p>
+                <div class="wrapper">
+                    <img src="img/review-2.jpg" alt="review">
+                    <p>
+                        <span class="name">Игнатьев Давид</span>
+                        <span class="descr">Дело о жилишнем споре</span>
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <p class="review-body">
+                    Клиент помогал с уточнением границ красных линий земельного участка и узаконением реконструкции дома. Все прошло хорошо)
+                </p>
+                <div class="wrapper">
+                    <img src="img/review-3.jpg" alt="review">
+                    <p>
+                        <span class="name">Руденко Анна</span>
+                        <span class="descr">Дело о жилишнем споре</span>
+                    </p>
                 </div>
             </div>
         </div>

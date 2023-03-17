@@ -5,11 +5,12 @@
     border: none
     outline: none
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;700&family=Montserrat:wght@400;500;600;700;900&display=swap')
 
 $black: #000
 $black_upper: #374246
 $yelow: #E9F8F9
+$third: #C0EEF2
 $second: #2543A0
 $prime: #537FE7
 
@@ -53,11 +54,18 @@ h4
     line-height: 140%
     margin-bottom: 8px
 
-p
+p, li
     font-weight: 400
     font-size: 20px
     line-height: 150%
     margin: 0 0 40px
+
+ul, ol
+    padding-left: 25px
+    li
+        font-weight: 500
+        margin-bottom: 0
+        padding: 5px 0
 
 .container
     width: 100%
@@ -239,25 +247,35 @@ section
         line-height: 130%
 
 .info
-    background-color: #FCFFE7
-    border: 1px solid rgba(0, 0, 0, 0.2)
-    padding: 25px 35px 10px
-    background-image: url('../img/i-info.svg')
-    background-repeat: no-repeat
-    background-position: right 20px top 20px
+    display: inline-block
+    text-align: center
+    background-color: $third
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.08)
+    padding: 10px 35px 25px
     color: $black
-    h4
-        margin-bottom: 10px
-        max-width: 94%
-        span
-            white-space: nowrap
-    p
-        max-width: 90%
-        margin: 0 0 20px
-        font-size: 18px
+    font-size: 20px
+    margin: 0
+    b
+        display: block
+        font-weight: 800
+        font-size: 58px
+        line-height: 110%
 
-    .btn
-        text-transform: unset
+.dropdown
+    &-btn
+        text-transform: uppercase
+        font-weight: 700
+        text-decoration: underline
+        padding-right: 30px
+        background-image: url('../img/arrow-down.svg')
+        background-repeat: no-repeat
+        background-position: center right 
+        background-size: 20px auto
+        padding-right: 24px
+
+    &-content
+        padding-top: 15px
+        display: none
 
 .wrapper, .wrap, .wrap-strech, .wrap-start
     display: flex
@@ -333,24 +351,6 @@ input[name="volume"]
         box-shadow: 0 0 20px 0 rgba(red, .4)
     100%
         box-shadow: none
-
-.heading
-    font-weight: 600
-    font-size: 20px
-    line-height: 22px
-
-.text
-    font-style: normal
-    font-weight: 400
-    font-size: 16px
-    line-height: 22px
-
-.subheading
-    font-weight: 600
-    font-size: 32px
-    line-height: 120%
-    text-align: center
-    margin-bottom: 30px
 
 textarea
     min-height: 200px
