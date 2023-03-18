@@ -262,7 +262,7 @@ section
         line-height: 110%
 
 .logo
-    margin: 0 
+    margin: 0
     text-transform: uppercase
     font-weight: bold
     font-size: 46px
@@ -283,9 +283,8 @@ section
         padding-right: 24px
 
     &-content
-        padding-top: 15px
         display: none
-        margin: 0
+        margin: 0 !important
         opacity: .5
 
 .wrapper, .wrap, .wrap-strech, .wrap-start
@@ -377,18 +376,16 @@ textarea
         font-size: 44px
 
     .phone
-        span 
+        span
             font-size: 14px
-        b 
-            font-size: 20px 
+        b
+            font-size: 20px
 
-    .logo 
+    .logo
         font-size: 36px
 
-
-
 @media screen and ( max-width: 1200px )
-    p
+    p, li
         font-size: 16px
         margin-bottom: 30px
 
@@ -397,6 +394,9 @@ textarea
 
     h2
         font-size: 30px
+
+    h3
+        font-size: 24px
 
     section
         padding: 60px 0
@@ -410,13 +410,6 @@ textarea
         padding: 20px 24px 19px
         min-width: 200px
 
-    ul
-        &.dont,
-        &.do
-            li
-                padding-left: 35px
-                background-size: 26px 26px
-
     .info
         background-position: center top 10px
         padding-top: 100px
@@ -428,19 +421,19 @@ textarea
 
 @media screen and ( max-width: 700px )
     h1
-        font-size: 30px
+        font-size: 32px
 
     h2
         font-size: 28px
         margin-bottom: 20px
 
-    p
+    p, li
         font-size: 15px
-        line-height: 130%
+        line-height: 140%
 
     h3
-        font-size: 24px
-        margin-bottom: 24px
+        font-size: 20px
+        margin-bottom: 15px
 
     h4
         font-size: 20px
@@ -466,7 +459,7 @@ textarea
                 &::after
                     top: 8px
 
-    .logo 
+    .logo
         font-size: 30px
 
     input,
@@ -476,3 +469,10 @@ textarea
 
     label
         font-size: 14px
+
+    .dropdown
+        &-btn
+            font-size: 14px
+            font-weight: 600
+            background-size: 16px auto
+            padding-right: 20px

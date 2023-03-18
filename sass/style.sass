@@ -90,31 +90,33 @@
             display: inline-block
             z-index: 1
             position: relative
-            &::before
-                content: ''
-                display: none
-                width: 100%
-                height: 120%
-                top: -10%
-                left: 0
-                position: absolute
-                z-index: -11
-                background-color: $prime
-                box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.15)
-            &.active
-                color: #fff
-                img
-                    filter: invert(10)
+            @media screen and ( min-width: 1200px )
+
                 &::before
-                    display: block
+                    content: ''
+                    display: none
+                    width: 100%
+                    height: 120%
+                    top: -10%
+                    left: 0
+                    position: absolute
+                    z-index: -11
+                    background-color: $prime
+                    box-shadow: 0px 4px 86px rgba(0, 0, 0, 0.15)
+                &.active
+                    color: #fff
+                    img
+                        filter: invert(10)
+                    &::before
+                        display: block
 
-            &:nth-of-type(4)
-                border-right: 1px solid rgba($prime, .1)
-                border-left: 1px solid rgba($prime, .1)
+                &:nth-of-type(4)
+                    border-right: 1px solid rgba($prime, .1)
+                    border-left: 1px solid rgba($prime, .1)
 
-            &:hover
-                img, p
-                    transform: translateY(-8px)
+                &:hover
+                    img, p
+                        transform: translateY(-8px)
 
         img
             margin-bottom: 12px
@@ -154,7 +156,6 @@
 
         img
             width: 110px
-            min-width: 110px
             position: absolute
             left: 0
             top: 50px
@@ -396,10 +397,11 @@
         max-height: unset
         &::before
             background: linear-gradient(179.74deg, rgba(24, 24, 35, 0.67) 0.22%, rgba(24, 24, 35, 0) 29.53%), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
+
         &-content
             margin: 0
             padding-top: 40px
-            padding-bottom: 60px
+            padding-bottom: 120px
             p
                 display: none
 
@@ -417,7 +419,7 @@
 
         h1
             left: 0
-            margin: 0 auto 50vh
+            margin: 0 auto 38vh
             &::before
                 display: none
 
@@ -428,13 +430,35 @@
 
         .author
             font-size: 21px
-            bottom: 30%
-            right: 25%
+            bottom: 35%
+            right: 20%
             display: block
+            font-size: 14px
+            padding: 14px 32px 15px
 
     .services
         &__list
-            display: none
+            width: 100%
+            max-width: 100%
+            align-items: stretch
+            overflow-x: scroll
+            justify-content: flex-start
+            background-color: transparent
+            box-shadow: none
+            padding: 0 0 17px 16px
+            gap: 18px
+            a
+                box-sizing: content-box
+                padding: 29px 10px
+                min-width: 205px
+                background-color: none
+                background-color: #fff
+                box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.25)
+            p, b
+                font-size: 14px !important
+                line-height: 20px
+            span
+                white-space: nowrap
 
         .item
             display: block
@@ -443,11 +467,23 @@
                 padding: 0
 
             .action
+                margin-top: 30px
+                padding-top: 20px
+                border-top: 1px solid rgba(0, 0, 0, .1)
                 text-align: center
                 .btn
                     min-width: 300px
+
             .price
                 text-align: center
+
+            img
+                width: 63px
+
+            h3
+                padding-left: 80px
+                max-width: 450px
+                margin-bottom: 20px
 
         .box
             width: 100%
@@ -468,3 +504,16 @@
 
         .author
             display: none
+
+    .services
+        .item
+            img
+                width: 55px
+            h3
+                padding-left: 68px
+                text-transform: none
+                max-width: 320px
+
+            .price
+                font-size: 26px
+                margin-bottom: 15px
