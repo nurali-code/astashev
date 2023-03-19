@@ -175,6 +175,10 @@ section
                 &::after
                     background-color: transparent
 
+    &.white 
+        background-color: #fff
+        color: $second
+
     &:hover
         opacity: 1
         box-shadow: 0 10px 50px -10px rgba($prime, .6)
@@ -186,7 +190,7 @@ section
     &[disabled],
     &.loading
         color: rgba(0, 0, 0, .2)
-        background-color: rgba($yelow, .3)
+        background-color: rgba($prime, .3)
         cursor: unset
         animation: none
         pointer-events: none
@@ -195,16 +199,6 @@ section
     &.loading
         color: transparent
         background-image: url('../img/loader.gif')
-
-    &-link
-        padding-right: 28px
-        background-image: url('../img/arrow_next.svg')
-        background-repeat: no-repeat
-        background-position: right center
-        background-size: 24px 24px
-        &:hover
-            color: $yelow
-            opacity: 1
 
     &-second
         box-shadow: none
@@ -273,7 +267,7 @@ section
 .dropdown
     &-btn
         text-transform: uppercase
-        font-weight: 700
+        font-weight: 600
         text-decoration: underline
         padding-right: 30px
         background-image: url('../img/arrow-down.svg')
@@ -285,7 +279,7 @@ section
     &-content
         display: none
         margin: 0 !important
-        opacity: .5
+        opacity: .7
 
 .wrapper, .wrap, .wrap-strech, .wrap-start
     display: flex
@@ -337,7 +331,7 @@ label
     margin-bottom: 5px
     opacity: .7
     i
-        color: $prime
+        color: red
 
 select
     cursor: pointer
@@ -411,13 +405,12 @@ textarea
         min-width: 200px
 
     .info
-        background-position: center top 10px
-        padding-top: 100px
-        background-size: 80px auto
         max-width: 500px
         margin: 0 auto
-        p
-            max-width: 100%
+        font-size: 18px
+        padding: 12px 30px
+        b 
+            font-size: 48px
 
 @media screen and ( max-width: 700px )
     h1
@@ -443,7 +436,7 @@ textarea
 
     .info
         background-image: none
-        padding: 25px 20px 0px
+        padding: 20px 30px
         max-width: 400px
         p
             font-size: 13px

@@ -66,7 +66,6 @@
         padding: 20px 40px 24px
 
 .services
-    padding-top: 0
     overflow: hidden
     position: relative
     z-index: 100
@@ -151,6 +150,7 @@
             top: 0
             transform: translateX(-50%)
             transition: .3s ease-in all
+
         &:nth-of-type(even)::before
             background-color: $yelow
 
@@ -182,15 +182,16 @@
 
         &.point
             &::before
-                background-color: rgba(red, .1) !important
+                background-color: rgba($prime, .2) !important
 
-        &:hover
-            z-index: 100
-            &::before
-                box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .1)
+        @media screen and ( min-width: 1200px )
+            &:hover
+                z-index: 100
+                &::before
+                    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .1)
 
         p
-            margin-bottom: 15px
+            margin-bottom: 13px
 
     .box
         background: linear-gradient(42.8deg, #2543A0 3.92%, #537FE7 100%)
@@ -235,6 +236,31 @@
 
         &:hover
             box-shadow: 0 10px 30px -5px rgba($second, .5)
+
+.about
+    position: relative
+    margin-bottom: 60px
+    padding: 120px 0
+
+    h2
+        max-width: 46%
+        margin: 0 0 40px auto
+
+    &-title
+        background-color: $prime
+        color: #fff
+        max-width: 65%
+        margin: 0 0 0 auto
+        padding: 60px 50px
+
+    &__img
+        position: absolute
+        top: 0
+        left: 0
+        width: 50%
+        object-fit: cover
+        object-position: top center
+        height: 100%
 
 .features
     overflow: hidden
@@ -286,6 +312,7 @@
 .reviews
     h2
         margin-bottom: 82px
+
     &-slider
         justify-content: center
         gap: 25px
@@ -389,6 +416,48 @@
                 max-width: 60px
                 margin-bottom: 3px
 
+        .box
+            .heading
+                font-size: 23px
+            .price b
+                font-size: 30px
+
+    .reviews
+        &-slider
+
+    .review
+        width: 300px
+        min-width: 300px
+        &-body
+            font-size: 15px
+            padding: 25px 30px 25px 22px
+            min-height: 300px
+            margin-bottom: 20px
+            &::before
+                bottom: -5px
+
+        .blank
+            margin-bottom: 25px
+            img
+                width: 30px
+                margin-right: 3px
+
+            span
+                font-size: 12px
+                padding-bottom: 4px
+
+        .wrapper
+            img
+                width: 55px
+                height: 55px
+
+            .name
+                font-size: 16px
+
+            .descr
+                font-size: 12px
+
+
 @media screen and ( max-width: 1200px )
     .main
         text-align: center
@@ -420,6 +489,7 @@
         h1
             left: 0
             margin: 0 auto 38vh
+            text-shadow: 1px 1px 3px rgb(0,0,0, 50%)
             &::before
                 display: none
 
@@ -435,6 +505,9 @@
             display: block
             font-size: 14px
             padding: 14px 32px 15px
+
+    .about
+        padding: 80px 0
 
     .services
         &__list
@@ -487,9 +560,77 @@
 
         .box
             width: 100%
+            max-width: 700px
+            margin: 0 auto 30px
             padding-bottom: 2px
             &-wrap
                 display: block
+
+    .reviews
+        padding: 0
+        top: -80px
+        h2 
+            margin-bottom: 50px
+
+        &-slider
+            flex-wrap: nowrap
+            justify-content: flex-start
+            padding-left: 20px
+            overflow-x: scroll
+            padding: 0 20px 20px 
+
+    .features
+        padding-bottom: 0
+        h2
+            padding: 0 16px
+            margin-bottom: 0
+
+        .container
+            padding: 0
+
+        .wrap
+            flex-direction: column-reverse
+
+        &-img
+            top: auto
+            width: 100%
+            text-align: center
+            max-width: 100%
+            position: relative
+            z-index: -1
+            .info
+                right: 20px
+                top: auto
+                bottom: 30%
+                &:nth-of-type(2)
+                    display: inline-block
+                    position: relative
+                    left: auto
+                    right: auto
+                    top: 50px
+
+            img
+                position: relative
+                z-index: -1
+
+        &-content
+            width: 100%
+            position: relative
+            z-index: 100
+            top: -160px
+            padding: 0
+            &::before
+                display: none
+
+        .item
+            background-color: $prime
+            padding: 25px
+            width: 95%
+            max-width: 650px
+            margin: 0 auto 15px
+            &:last-of-type
+                margin-bottom: 0
+
 
 @media screen and ( max-width: 700px )
     .main
@@ -500,15 +641,35 @@
 
         h1
             max-width: 300px
-            margin-bottom: 35vh
+            margin-bottom: 30vh
 
         .author
             display: none
+
+    .about
+        padding: 40px 0
+        &__img
+            width: 100%
+            top: auto
+            bottom: 0
+            height: calc( 100% - 110px )
+
+        h2
+            max-width: 100%
+            margin-bottom: 43vh
+
+        &-title
+            max-width: 100%
+            padding: 30px 34px 35px 24px
+            p
+                padding: 0
+                margin-bottom: 24px
 
     .services
         .item
             img
                 width: 55px
+
             h3
                 padding-left: 68px
                 text-transform: none
@@ -517,3 +678,46 @@
             .price
                 font-size: 26px
                 margin-bottom: 15px
+
+            p
+                margin-bottom: 10px
+
+        .box
+            text-align: center
+            padding: 34px 30px 18px
+            max-width: 400px
+            img
+                width: 60px
+                min-width: unset
+                margin-bottom: 14px
+            .wrap
+                justify-content: center
+                margin-bottom: 20px
+                &:first-child
+                    display: block
+
+            .heading
+                font-size: 20px
+                line-height: 120%
+                padding-left: 0
+                border: none
+                width: 100%
+                span
+                    font-size: 13px
+
+            .price
+                order: 1
+                width: 100%
+                margin-bottom: 20px
+
+            .btn
+                order: 2
+                min-width: 300px
+
+    .features
+        .item
+            padding: 18px 14px
+            img
+                width: 45px
+                min-width: 45px
+                margin-right: 14px
