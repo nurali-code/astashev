@@ -512,13 +512,13 @@
         &__list
             width: 100%
             max-width: 100%
-            align-items: stretch
+            // align-items: stretch
             overflow-x: scroll
             justify-content: flex-start
             background-color: transparent
             box-shadow: none
             padding: 0 0 17px 16px
-            gap: 18px
+            gap: 14px
             &::-webkit-scrollbar
                 height: 1px
             &::-webkit-scrollbar-track
@@ -529,15 +529,19 @@
 
             a
                 box-sizing: content-box
-                padding: 29px 10px
-                min-width: 205px
-                background-color: none
+                padding: 29px 25px
+                // min-width: 150px
                 background-color: #fff
                 box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.25)
+
+            img
+                width: 55px
+
             p, b
-                font-size: 14px !important
-                line-height: 20px
-            span
+                font-size: 12px !important
+                line-height: 16px
+
+            b, span
                 white-space: nowrap
 
         .item
