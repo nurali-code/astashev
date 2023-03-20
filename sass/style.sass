@@ -301,6 +301,9 @@
         position: relative
         z-index: 100
         top: -100px
+        img
+            display: block
+
         .info
             position: absolute
             right: -50px
@@ -323,9 +326,9 @@
     &-body
         background: linear-gradient(42.8deg, #2543A0 3.92%, #537FE7 100%)
         border-radius: 0px 96px 0px 0px
-        padding: 27px 32px 40px
+        padding: 80px 32px 40px
         color: #fff
-        min-height: 395px
+        min-height: 355px
         font-weight: 600
         font-size: 20px
         line-height: 140%
@@ -341,24 +344,6 @@
             bottom: -10px
             left: 20%
             transform: rotate(80deg) skew(20deg)
-
-    .blank
-        display: block
-        width: 100%
-        color: rgba(#fff, .6)
-        font-weight: 400
-        font-size: 14px
-        line-height: 130%
-        margin-bottom: 35px
-        img
-            width: 40px
-            vertical-align: bottom
-            display: inline-block
-            margin-right: 6px
-        span
-            display: inline-block
-            padding-bottom: 8px
-            text-decoration: underline
 
     .wrapper
         justify-content: start
@@ -430,21 +415,11 @@
         min-width: 300px
         &-body
             font-size: 15px
-            padding: 25px 30px 25px 22px
-            min-height: 300px
+            padding: 60px 30px 50px
+            min-height: 280px
             margin-bottom: 20px
             &::before
                 bottom: -5px
-
-        .blank
-            margin-bottom: 25px
-            img
-                width: 30px
-                margin-right: 3px
-
-            span
-                font-size: 12px
-                padding-bottom: 4px
 
         .wrapper
             img
@@ -510,7 +485,6 @@
         &__list
             width: 100%
             max-width: 100%
-            // align-items: stretch
             overflow-x: scroll
             justify-content: flex-start
             background-color: transparent
@@ -527,13 +501,12 @@
 
             a
                 box-sizing: content-box
-                padding: 29px 25px
-                // min-width: 150px
+                padding: 25px 25px 30px
                 background-color: #fff
                 box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.25)
 
             img
-                width: 55px
+                width: 50px
 
             p, b
                 font-size: 12px !important
@@ -628,6 +601,7 @@
             img
                 position: relative
                 z-index: -1
+                margin: 0 auto
 
         &-content
             width: 100%
@@ -705,6 +679,7 @@
                 width: 60px
                 min-width: unset
                 margin-bottom: 14px
+
             .wrap
                 justify-content: center
                 margin-bottom: 20px
@@ -712,6 +687,7 @@
                     display: block
 
             .heading
+                font-weight: 400
                 font-size: 20px
                 line-height: 120%
                 padding-left: 0
@@ -724,6 +700,9 @@
                 order: 1
                 width: 100%
                 margin-bottom: 20px
+
+                b
+                    font-weight: 900
 
             .btn
                 order: 2

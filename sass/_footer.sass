@@ -31,6 +31,16 @@ footer
             color: #000
             font-size: 24px
 
+        &.address
+            max-width: 210px
+            margin-left: 30px
+            b
+                font-size: 18px
+
+        &.email
+            b
+                font-size: 20px
+
     .middle
         max-width: 1000px
         margin: 0 auto 40px
@@ -38,7 +48,9 @@ footer
     .bottom
         padding: 15px 0
         border-top: 1px solid #eee
+
     nav
+        margin-right: 90px
         a
             display: inline-block
             vertical-align: middle
@@ -54,6 +66,11 @@ footer
     .logo
         display: inline-block
         font-size: 35px
+        line-height: 100%
+        max-width: unset
+        span
+            font-weight: normal
+            font-size: 14px
 
     @media screen and ( max-width: 1600px )
         .descr
@@ -79,6 +96,7 @@ footer
         .logo
             font-size: 34px
         nav
+            margin: 0 auto 0 40px
             a
                 padding: 8px
                 font-size: 14px
@@ -89,6 +107,13 @@ footer
 
         .btn
             margin-bottom: 25px
+
+        .phone
+            &.address
+                margin-left: 0
+
+        nav 
+            margin: 0 auto 
 
         .middle
             flex-direction: column
