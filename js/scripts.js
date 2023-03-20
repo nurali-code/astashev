@@ -26,7 +26,6 @@ $(function () {
             $(id).fadeIn(300);
         }
     }
-
     $('[data-modal]').on('click', function (e) {
         e.preventDefault();
         $(this).toggleClass('active')
@@ -58,8 +57,6 @@ $('input[type="tel"]').inputmask({ "mask": "8-999-999-99-99" });
 
 /*---------------------------------------------------end*/
 $('.dropdown-btn').click(function () {
-    // Скрытие всех содержимых
-    // Показать содержимое, связанное с заголовком, на который щелкнули
     $(this).next('.dropdown-content').slideDown();
     $(this).remove();
 });
@@ -78,13 +75,5 @@ $("form").submit(function () {
         $('.modal').fadeOut();
         $('#modal-thanks').fadeIn();
         setTimeout(() => { hideModals() }, 6000)
-        // alert('Спасибо, за заявку, ожидайте с вами свяжется специалист');
     }); return false;
 });
-
-function numberWithSpaces(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") };
-
-$('input[name="volume"]').on('keyup', function () {
-    $(this).val(numberWithSpaces($(this).val().replace(/[^0-9.]/g, "")))
-})
-
