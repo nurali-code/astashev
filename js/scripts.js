@@ -1,4 +1,9 @@
 
+AOS.init({
+    duration: 1000,
+    offset: 100,
+});
+
 $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
     hideModals();
