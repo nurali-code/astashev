@@ -101,7 +101,7 @@
                     проведения <b>более 5 000 сделок</b> различной сложности. Являюсь членом ассоциации юристов России и имею
                     обширные знания в сфере налогообложения и работы с жилищными сертификатами.
                 </p>
-                <button class="btn white">задать мне вопрос</button>
+                <button class="btn white" data-modal="modal-messege">задать мне вопрос</button>
             </div>
         </div>
         <img src="img/about.jpg" class="about__img" alt="about">
@@ -491,6 +491,24 @@
                 <b>eastashev@yandex.ru</b>
             </a>
             <button data-modal="modal-form" class="btn">сделать заказ</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-messege">
+        <div class="modal-content">
+            <button class="modal-close">&#x2715;</button>
+            <h3>Задать вопрос</h3>
+            <form action="./smart.php" method="post" class="form">
+                <div class="inp-wrap">
+                    <label>Напишите ваше обращение <i>*</i></label>
+                    <textarea name="messege" required cols="30" rows="10"></textarea>
+                </div>
+                <div class="inp-wrap">
+                    <label>Номер телефона <i>*</i></label>
+                    <input type="tel" name="phone_number" required placeholder="Ваш номер телефона">
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
         </div>
     </div>
 
