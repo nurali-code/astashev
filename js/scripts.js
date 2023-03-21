@@ -72,7 +72,7 @@ $("form").submit(function () {
     $.ajax({
         type: "post",
         method: 'post',
-        url: "./smart.php",
+        url: "../smart.php",
         data: $(this).serialize()
     }).done(function () {
         $('form .btn').removeClass('loading');

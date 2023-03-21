@@ -1,8 +1,8 @@
 <?php
 $name = $_POST['name'];
 $phone = $_POST['phone_number'];
-$sevice = $_POST['sevice'];
-$messege = $_POST['messege'];
+$message = $_POST['message'];
+$service = $_POST['service'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -29,34 +29,30 @@ $mail->addAddress('nur3.dav.97@gmail.com');  // Name is optional
 $mail->isHTML(true); // Set email format to HTML
 
 $mail->Subject = 'Новая заявка с сайта.';
-$mail->Body = '<table style="width: 100%;">
+$mail->Body = '
+<table style="width: 100%;">
 <tr>
-    <td style="border: 1px solid #bdbdbd; padding: 5px; width: 120px">Телефон</td>
-    <td style="border: 1px solid #bdbdbd; padding: 5px;">' . $phone . '</td>
-</tr>';
-
-if (!empty($messege)) {
-    $mail->Body .= '<tr>
-        <td style="border: 1px solid #bdbdbd; padding: 5px; width: 120px">Обращение от клиента</td>
-        <td style="border: 1px solid #bdbdbd; padding: 5px;">' . $messege . '</td>
-    </tr>';
-} else {
-    $mail->Body .= '<tr>
-		<td style="border: 1px solid #bdbdbd; padding: 5px; width: 120px">Имя</td>
-		<td style="border: 1px solid #bdbdbd; padding: 5px;">' . $name . '</td>
-	</tr>
-	<tr>
-        <td style="border: 1px solid #bdbdbd; padding: 5px; width: 120px">Объём</td>
-        <td style="border: 1px solid #bdbdbd; padding: 5px;">' . $sevice . ' кг.</td>
-    </tr>';
-}
-
-$mail->Body .= '</table>';
+	<td style="border: 1px solid #bdbdbd; padding: 5px; width: 180px">Имя</td>
+	<td style="border: 1px solid #bdbdbd; padding: 5px;">' . $name . '</td>
+</tr>
+<tr>
+	<td style="border: 1px solid #bdbdbd; padding: 5px; width: 180px">Телефон</td>
+	<td style="border: 1px solid #bdbdbd; padding: 5px;">' . $phone . '</td>
+</tr>
+<tr>
+<td style="border: 1px solid #bdbdbd; padding: 5px; width: 180px">Услуга</td>
+<td style="border: 1px solid #bdbdbd; padding: 5px;">' . $service . '</td>
+</tr>
+<tr>
+	<td style="border: 1px solid #bdbdbd; padding: 5px; width: 180px">Обращение от клиента</td>
+	<td style="border: 1px solid #bdbdbd; padding: 5px;">' . $message . '</td>
+</tr>
+</table>';
 
 $mail->AltBody = 'Это альтернативный текст';
 
 if (!$mail->send()) {
-    echo 'Error';
+	echo 'Error';
 } else {
-    echo 'Good!';
+	echo 'Good!';
 }
