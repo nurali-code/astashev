@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         hideModals();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 40, }, 300,)
+        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 100, }, 300,)
         $($(this).attr('href')).addClass('point')
         setTimeout(() => {
             $($(this).attr('href')).removeClass('point')

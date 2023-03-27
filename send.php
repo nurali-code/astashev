@@ -6,7 +6,7 @@ $service = $_POST['service'];
 $message = $_POST['message'];
 
 // Формирование заголовков письма
-$to = 'nur3.dav.97@gmail.com';
+$to = 'ex@.dda.rom';
 $subject = 'Новое сообщение с сайта';
 $headers = 'From: ' . $name . ' <' . $email . '>' . "\r\n" .
             'Reply-To: ' . $email . "\r\n" .
